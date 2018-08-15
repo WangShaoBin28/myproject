@@ -6,11 +6,19 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/myproject?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
   application:
     name: my-project
+  mail:
+    password: wsbsmile287391
+    default-encoding: utf-8
+    host: smtp.163.com
+    port: 25
+    protocol: smtp
+    username: wsbsmile@163.com
 
 
 mybatis:
   mapper-locations: mapper/*.xml
   type-aliases-package: com.app.model
+
 
 
 logging:
