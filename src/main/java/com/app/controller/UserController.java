@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * 测试
+ */
 @Controller
 @RequestMapping("/user/*")
 public class UserController {
