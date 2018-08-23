@@ -82,6 +82,12 @@
             <version>2.7.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>3.3.49.ALL</version>
+        </dependency>
+
         <!--<dependency>用开源自定义的ui-->
         <!--<groupId>io.springfox</groupId>-->
         <!--<artifactId>springfox-swagger-ui</artifactId>-->
