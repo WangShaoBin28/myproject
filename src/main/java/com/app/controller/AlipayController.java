@@ -33,7 +33,7 @@ public class AlipayController {
     //公众号支付(网站支付)
     @RequestMapping(value = "/wapPay")
     public String wapPay(HttpServletResponse httpResponse, HttpServletRequest request) throws Exception {
-//获得初始化的AlipayClient
+        //获得初始化的AlipayClient
         AlipayClient alipayClient = new DefaultAlipayClient(AlipayConfig.gatewayUrl, AlipayConfig.app_id, AlipayConfig.merchant_private_key, "json", AlipayConfig.charset, AlipayConfig.alipay_public_key, AlipayConfig.sign_type);
 
         //设置请求参数
@@ -211,4 +211,7 @@ public class AlipayController {
         //——请在这里编写您的程序（以上代码仅作参考）——
         return "/alipay/return";
     }
+
+
+
 }
