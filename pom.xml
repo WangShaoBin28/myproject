@@ -82,6 +82,12 @@
             <version>2.7.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.webjars.bower</groupId>
+            <artifactId>jquery</artifactId>
+            <version>2.2.4</version>
+        </dependency>
+
         <!--<dependency>用开源自定义的ui-->
         <!--<groupId>io.springfox</groupId>-->
         <!--<artifactId>springfox-swagger-ui</artifactId>-->

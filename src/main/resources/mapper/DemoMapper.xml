@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.app.dao.DemoMapper">
+
+    <!--结果集-->
+    <resultMap id="Demo" type="com.app.model.Demo">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="parentId" property="parentId"/>
+    </resultMap>
+    <!--查询父类-->
+    <select id="findParentList" resultMap="Demo">
+        select * from t_demo where parentId is null
+    </select>
+
+    <!--查询子类-->
+    <select id="findChildren" resultMap="Demo" parameterType="java.lang.Integer">
+        select * from t_demo where parentId = #{parentId}
+    </select>
+
+
+</mapper>
