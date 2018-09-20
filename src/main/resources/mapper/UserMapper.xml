@@ -7,15 +7,10 @@
         <result column="name" property="name"/>
         <result column="age" property="age"/>
 
-        <collection property="cars" ofType="com.app.model.Car" javaType="java.util.ArrayList" >
-            <id column="cId" property="cId"></id>
-            <result column="carName" property="carName"></result>
-        </collection>
-
     </resultMap>
 
     <select id="selectById" resultMap="User" parameterType="java.lang.Integer">
-         SELECT * FROM t_user u ,t_car c WHERE u.id = c.userId AND u.id = #{id}
+         SELECT * FROM t_user u  WHERE u.id = #{id}
     </select>
 
     <insert id="insertUser"  parameterType="User">

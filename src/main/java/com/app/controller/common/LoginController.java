@@ -18,9 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class LoginController {
 
     @RequestMapping("login")
-    public void login(Integer id, ModelMap modelMap) {
-        id = id + 1;
-        modelMap.addAttribute("id",id);
+    public void login() {
     }
 
 

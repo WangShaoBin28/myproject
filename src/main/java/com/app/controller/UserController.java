@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 测试
  */
-@RestController
-@RequestMapping("/user/*")
+@Controller
+@RequestMapping("/user/")
 public class UserController {
 
     @Autowired

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>欢迎登陆！</title>
     <link rel="stylesheet" href="/layui/css/layui.css">
-    <#--<link rel="stylesheet" href="/login/login.css">-->
+    <link rel="stylesheet" href="/login/login.css">
 </head>
 <body>
 <div class="authcenter-head"></div>
@@ -28,8 +28,7 @@
         <br/>
         <br/>
         <div class="gcs-login-container">
-            <input type="button" onclick="window.location.href=''" value="前进" class="btn-login"/>
-            <input type="button" onclick="window.history.go(-1)" value="后退" class="btn-login"/>
+            <input type="button" onclick="window.location.href='/user/list?id=2'" value="登入" class="btn-login"/>
         </div>
     </div>
 </div>
